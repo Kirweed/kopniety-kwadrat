@@ -1,0 +1,65 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel = "stylesheet" type="text/css" href = "{% static 'lesson.css' %}">
+{% endblock %}
+
+{% block title %} Lesson {% endblock %}
+
+{% block site %}
+
+    <header class = "header">
+        <div class = "logo"></div>
+        <a href = "{% url 'index' %}">
+            <div class = "platform-name">Kopniety-kwadrat.pl</div>
+        </a>
+    </header>
+
+    <main>
+        <div class = "content-box-wrapper">
+            <div class = "lesson-path">Blog -> Liceum -> Poziom podstawowy -> Ciągi</div>
+            <div class = "section-wrapper">
+                <article class = "left-side-wrapper">
+                    <header class = "lesson-header">
+                        <h2>Ciąg arytmetyczny</h2>
+                    </header>
+                    <div id = "content">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et nisi sit amet neque dignissim dignissim. Aliquam euismod arcu feugiat sodales mattis. In tincidunt, est lobortis sollicitudin accumsan, ex ipsum feugiat ligula, quis facilisis elit diam sit amet eros. Donec et risus nec quam mattis egestas. Sed sodales tortor odio, a sagittis quam luctus sed. Duis ultrices gravida leo, a ullamcorper nunc tristique eu. Vestibulum lobortis maximus augue, vel suscipit mi porta sit amet. Proin consectetur sapien vitae est efficitur, in pharetra libero sodales. Quisque eget est scelerisque, blandit metus at, auctor est. Donec sollicitudin, ex nec suscipit tristique, lectus libero dictum libero, in porta turpis lacus et elit. Sed vitae tempor dui, at cursus ligula. Duis vel dolor vitae magna ornare dignissim. Donec vulputate luctus dolor non facilisis. Mauris at vulputate purus. Vestibulum neque felis, malesuada et nisl at, hendrerit aliquam nisi. Etiam sed justo in sem commodo imperdiet et vitae orci.
+
+                        Phasellus non felis et velit elementum vehicula nec a tellus. Suspendisse potenti. Morbi fermentum sapien pellentesque, pretium sapien quis, ornare nulla. Proin sit amet lobortis sem, at fermentum tortor. Donec quis laoreet arcu, id feugiat nibh. Integer luctus nulla vitae ornare luctus. Aliquam erat volutpat. Maecenas et purus ac ipsum viverra feugiat non placerat quam.
+
+                        Integer viverra augue a neque vulputate aliquet. Suspendisse massa nibh, gravida pulvinar massa eget, pharetra commodo leo. Aenean suscipit dui ut velit pharetra imperdiet. Nam metus lectus, tincidunt non sem eget, fermentum tincidunt purus. Curabitur convallis molestie leo, vel accumsan erat efficitur sed. Ut in nunc quis tortor rutrum vestibulum. Sed tristique, urna ac elementum hendrerit, arcu sapien faucibus risus, aliquam bibendum quam nulla eget felis. Proin orci augue, porttitor vel felis quis, rutrum porttitor magna. Donec tristique dui tortor, vel semper felis cursus non. Praesent non nisl vestibulum, semper augue a, consequat purus.
+                        </p>
+                    </div>
+                </article>
+                <section class = "right-side-wrapper">
+                    <div class = "video"></div>
+                    <div class = "vertical-ad"></div>
+                </section>
+            </div>
+            <div class = "section-wrapper">
+                <article>
+                    <header class = "lesson-header">
+                        <h2>Zadania wraz z rozwiązaniami:</h2>
+                    </header>
+                    <div class = "exercises">
+                        <h3>1. Pan Jan spłacał kredyt w wysokości 12 000  zł w sześciu ratach, z których każda kolejna była o 500 zł mniejsza od poprzedniej. Pierwsza rata była równa:</h3>
+                        <button class = "show-solve">Pokaż odpowiedź</button>
+                        <button class = "show-solve">Pokaż rozwiązanie</button>
+                        <p class = "excercise"></p>
+                    </div>
+                </article>
+                <div class = "horizontal-ad"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Designed and created by Michał Plichta
+    </footer>
+
+    <script src = "{% static 'show-solve.js' %}"></script>
+
+{% endblock %}

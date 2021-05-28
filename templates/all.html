@@ -1,0 +1,65 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel = "stylesheet" type = "text/css" href = "{% static 'all-lessons.css' %}">
+{% endblock %}
+
+{% block title %} Wszystkie Lekcje {% endblock %}
+
+{% block site %}
+
+    <header class = "header">
+        <div class = "logo"></div>
+        <a href = "{% url 'index' %}">
+            <div class = "platform-name">Kopniety-kwadrat.pl</div>
+        </a>
+    </header>
+
+    <main>
+        <div class = "content-box-wrapper">
+            <section>
+                <h2>Spis lekcji wraz z podziałem na kategorie:</h2>
+                <ol>
+                    <li>Podstawówka klasy 1-4
+                        <ol>
+                            <li><a href = "#">Dodawanie w zakresie 100</a></li>
+                            <li><a href = "#">Odejmowanie w zakresie 100</a></li>
+                            <li><a href = "#">Mnożenie w zakresie 100</a></li>
+                            <li><a href = "#">Dzielenie w zakresie 100</a></li>
+                        </ol>
+                    </li>
+                    <li>Podstawówka klasy 5-8
+                        <ol>
+                            <li><a href = "#">Ułamki zwykłe - wprowadzenie</a></li>
+                            <li><a href = "#">Ułamki zwykłe - dodawanie</a></li>
+                            <li><a href = "#">Ułamki zwykłe - odejmowanie</a></li>
+                            <li><a href = "#">Ułamki zwykłe - mnożenie</a></li>
+                            <li><a href = "#">Ułamki zwykłe - dzielenie</a></li>
+                            <li><a href = "#">Ułamki dziesiętne - wprowadzenie</a></li>
+                        </ol>
+                    </li>
+                    <li>Liceum poziom podstawowy
+                        <ol>
+                            <li><a href = "#">funkcje - wprowadzenie</a></li>
+                            <li><a href = "#">funkcje - funkcja liniowa</a></li>
+                            <li><a href = "#">funkcje - funkcja kwadratowa</a></li>
+                        </ol>
+                    </li>
+                    <li>Liceum poziom rozszerzony
+                        <ol>
+                            <li><a href = "#">funkcje - wprowadzenie</a></li>
+                            <li><a href = "#">funkcje - funkcja liniowa</a></li>
+                            <li><a href = "#">funkcje - funkcja kwadratowa</a></li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        Designed and created by Michał Plichta
+    </footer>
+
+{% endblock %}

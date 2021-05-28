@@ -1,0 +1,115 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel = "stylesheet" type="text/css" href = "{% static 'main-page.css' %}">
+{% endblock %}
+
+{% block title %} Kopnięty Kwadrat {% endblock %}
+
+{% block site %}
+
+    <header class="header">
+        <div class = "logo"></div>
+        <a href = "{% url 'index' %}">
+            <div class = "platform-name">Kopniety-kwadrat.pl</div>
+        </a>
+        <nav>
+            <div class = "nav-bar">
+                <ol id = "nav-list">
+                    <li id = "li-1">Kim jestem?</li>
+                    <li id = "li-2">Lekcje</li>
+                    <li id = "li-3">Zapisz się na korepetycje</li>
+                    <li id = "li-4">Moje inne projekty</li>
+                </ol>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class = "content-box-wrapper">
+            <article>
+                <div class = "content-box" id = "about-me">
+                    <span class = "article-header">Kim jestem?</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenean venenatis eget purus ac lacinia. In dignissim mollis lorem.
+                        Morbi interdum est eget quam posuere, quis dictum turpis consequat.
+                        Vivamus lacinia, nibh vitae maximus consectetur, ex turpis semper neque, hendrerit hendrerit
+                        leo turpis vitae justo. Sed in sem efficitur, porttitor magna at, imperdiet ex.
+                        Sed sed metus congue, mattis tellus eu, vehicula lacus. Nunc ultrices eget tellus in malesuada.
+                        Mauris ornare porttitor justo. Nam eu tortor lacus. Orci varius natoque penatibus et
+                        magnis dis parturient montes, nascetur ridiculus mus. Nullam suscipit magna elementum,
+                        condimentum tellus vel, condimentum nisi. Aliquam facilisis felis nulla, non fermentum
+                        lectus tempus non.
+                        Vestibulum in ultrices sapien, at vehicula purus.
+                        Proin malesuada est vel est porta fermentum.
+                        Nam vitae sapien auctor sem lobortis fermentum in eu turpis.
+                        Maecenas auctor velit metus, eu commodo ligula molestie id. Curabitur ullamcorper
+                        enim congue mauris varius, sit amet semper erat sodales. Ut congue, neque id laoreet laoreet,
+                        nisl urna congue mauris, id feugiat turpis diam eget nibh. Integer auctor elit nec ultricies
+                        vehicula. Sed nunc purus, luctus eget augue vehicula, pretium facilisis tortor. Nam sagittis
+                        libero in scelerisque feugiat. Vestibulum ornare, dui ut porttitor placerat, eros dui rhoncus
+                        leo, et aliquam neque eros quis lectus. Aliquam ut metus dolor. Aenean eu nisl a
+                        tellus consectetur finibus eget non velit. Sed posuere iaculis elit, ut commodo dolor
+                        laoreet eget. In placerat facilisis purus, in pharetra leo. Suspendisse tristique, nulla ac
+                        placerat semper, lectus lorem convallis enim, eu auctor tellus sem a lacus.
+                        Donec pulvinar congue arcu, ut interdum sapien consequat at. Sed efficitur sem ac
+                        urna mattis suscipit.
+                        Maecenas nunc neque, consequat a dui in, faucibus accumsan nulla. Nullam malesuada
+                        ante eu venenatis eleifend. Pellentesque et est luctus, tristique sapien vel, tristique
+                        risus. Curabitur lobortis, orci quis molestie porttitor, sapien tellus dapibus lectus,
+                        ac fringilla justo dui eu tortor. Fusce nec iaculis sem. Nam aliquet, nulla ut hendrerit
+                        malesuada, neque nunc malesuada erat, eget mollis metus odio eget arcu. In dignissim nunc
+                        tellus, at rhoncus ante ornare sit amet. Mauris suscipit mauris diam, vel sodales ipsum
+                        malesuada at. Nam rutrum suscipit diam eget commodo. Aliquam nulla diam, porta sed purus ut,
+                        congue egestas quam. Nullam feugiat, enim a posuere convallis, sem tortor consectetur metus,
+                        ac porttitor ipsum enim in nulla.</p>
+                </div>
+            </article>
+            <article>
+                <div class = "content-box" id = "blog-lessons">
+                    <div class = "categories-wrapper">
+                        <p>
+                            Moje lekcje są podzielone na kategorie z myślą by materiał byl dostosowany do poziomu którego oczekujemy.
+                            Każda lekcja pokrótce wyjaśnia jakieś zagadnienie, często na różnych przykładach. Dodatkowo, do każdej lekcji dołączone są zadania wraz z ich rozwiązaniami.
+                            A w przyszłości planuję również dodać rozwiązania w formie video.
+                            Podział na kategorię oraz spis wszystkich aktualnie dostepnych lekcji znajdziesz klikając w link poniżej.
+                        </p>
+                    </div>
+                    <div class = "last-lessons-wrapper">
+                        <span>Ostatnie lekcje</span>
+                        <ol>
+                            <li><a href = "#">29 lekcja</a></li>
+                            <li><a href = "#">28 lekcja</a></li>
+                            <li><a href = "#">27 lekcja</a></li>
+                            <li><a href = "#">26 lekcja</a></li>
+                            <li><a href = "#">25 lekcja</a></li>
+                        </ol>
+                    </div>
+
+                    <a href ="{% url 'all_lessons' %}">
+                        <div class = "button" style = "clear: both;">
+                            Spis Wszystkich lekcji
+                        </div>
+                    </a>
+
+                </div>
+            </article>
+            <article>
+                <div class = "content-box" id = "private-lessons"></div>
+            </article>
+            <article>
+                <div class = "content-box" id = "oder-projects"></div>
+            </article>
+        </div>
+    </main>
+
+    <div id = "scroll-to-top"><i class="fas fa-arrow-circle-up"></i></div>
+
+    <footer>
+        Designed and created by Michał Plichta
+    </footer>
+
+<script src = "{% static 'scrolling.js' %}"></script>
+
+{% endblock %}

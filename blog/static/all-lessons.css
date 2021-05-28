@@ -1,0 +1,23 @@
+.header {
+    height: 100px;
+}
+
+li {
+    list-style-type: decimal;
+    text-align: left;
+    margin: 30px;
+    font-size: 17px;
+}
+
+ol > li > ol > li {
+    list-style-type: initial;
+    margin: 10px;
+}
+
+.content-box-wrapper {
+    min-height: 600px;
+    padding: 20px;
+    background-color: #69747A;
+    border: 1px solid #fff;
+
+}

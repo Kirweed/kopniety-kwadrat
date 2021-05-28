@@ -1,0 +1,5 @@
+*.idea
+myVenv
+*.pyc
+settings.py
+*.sqlite3

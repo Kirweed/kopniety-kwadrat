@@ -1,0 +1,74 @@
+.header {
+    height: 100px;
+}
+
+.content-box-wrapper {
+    padding: 20px;
+    background-color: #69747A;
+    border: 1px solid #fff;
+}
+
+.section-wrapper {
+    width: 1198px;
+    min-height: 850px;
+}
+
+.left-side-wrapper {
+    width: 798px;
+    height: 850px;
+    float: left;
+}
+
+.lesson-header {
+    margin: 15px;
+    font-weight: bold;
+}
+
+#content > p{
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.exercises > h3{
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.show-solve {
+    height: 40px;
+    width: 170px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background-color: #205FFF;
+    color: #fff;
+}
+
+.show-solve:hover {
+    cursor: pointer;
+    background-color: #1254fc;
+}
+
+.right-side-wrapper {
+    width: 400px;
+    height: 860px;
+    float: left;
+}
+
+.video {
+    width: 320px;
+    height: 180px;
+    margin: 20px 40px 20px 40px;
+    background-color: #38ACFF;
+    border: 1px solid #fff;
+}
+
+.vertical-ad {
+    width: 300px;
+    height: 600px;
+    background-image: url("../media/ad-placeholder-vert.png");
+    border: 1px solid #fff;
+    margin: 20px 50px 20px 50px;
+}

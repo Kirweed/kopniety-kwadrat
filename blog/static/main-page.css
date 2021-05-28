@@ -1,0 +1,42 @@
+.content-box {
+    width: 1200px;
+    height: 600px;
+    padding: 20px;
+    border: 1px solid #fff;
+    background-color: #69747A;
+}
+
+.last-lessons-wrapper {
+    width: 500px;
+    font-size: 24px;
+    padding: 15px;
+    float: left;
+}
+
+.categories-wrapper {
+    width: 500px;
+    font-size: 24px;
+    padding: 15px;
+    float: left;
+}
+
+.last-lessons-wrapper > span {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 5px;
+}
+
+#scroll-to-top {
+    position: fixed;
+    opacity: 1;
+    right: 20px;
+    bottom: 120px;
+    z-index: 100;
+    color: #205FFF;
+    font-size: 50px;
+}
+
+#scroll-to-top:hover {
+    cursor: pointer;
+    color: #1254fc;
+}
